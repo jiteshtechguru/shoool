@@ -31,5 +31,12 @@ public class ExternalAPICallController {
 		ResponseEntity<Root> response  = restTemplate.getForEntity("https://countriesnow.space/api/v0.1/countries/capital", Root.class);
 		return response;
 	}
+	
+	
+	@GetMapping("/")
+	String getTestStr() {
+		return "form school project";
+	}
+	
 
 }
